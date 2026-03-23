@@ -9,6 +9,8 @@ const {
   DB_USERNAME,
   DB_PASSWORD,
   DB_NAME,
+  JWT_SECRET,
+  JWT_EXPIRES_IN,
 } = process.env;
 
 const port = Number(PORT ?? 5050);
@@ -22,4 +24,6 @@ export default {
   DB_USERNAME: DB_USERNAME || "root",
   DB_PASSWORD: DB_PASSWORD || "admin123",
   DB_NAME: DB_NAME || "quickly_db",
+  JWT_SECRET: JWT_SECRET || "dev_secret_change_me",
+  JWT_EXPIRES_IN: JWT_EXPIRES_IN || "1d",
 };
